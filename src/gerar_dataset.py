@@ -112,7 +112,7 @@ data = data.drop(columns=["prob_conversao"])
 # Certifique-se de que a pasta 'data' existe.
 # Use um caminho relativo para salvar o arquivo na pasta 'data'.
 try:
-    data.to_csv("../data/dados_crm.csv", index=False)
+    data.to_csv("../../data/dados_crm.csv", index=False)
     print("Dataset 'dados_crm.csv' gerado e salvo na pasta 'data/' com sucesso!")
 except FileNotFoundError:
     print(
